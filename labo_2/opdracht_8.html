@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Opdracht 8</title>
+</head>
+<body>
+<h1>Opdracht 8 - Waarom is dit niet correct genest?</h1>
+
+<h2>Oorspronkelijke HTML</h2>
+<p><span>hier komt een</span><a href=""> link</a><span> te staan</span></p>
+<p>
+  <code>
+    &lt;span&gt;hier komt een&lt;/span&gt;&lt;a href=""&gt;link&lt;/a&gt;&lt;span&gt; te staan&lt;/span&gt;
+  </code>
+</p>
+<p>
+  Dit is de oorspronkelijke versie waarin alles correct genest is. De <code>&lt;span&gt;</code> tags en de <code>&lt;a&gt;</code> tag staan allemaal op de juiste plek.
+</p>
+
+<h2>Veranderde HTML</h2>
+<p><span>hier komt <strong>een</span><a href=""> link</a></strong><span> te staan</span></p>
+<p>
+  <code>
+    &lt;span&gt;hier komt <strong>een&lt;/span&gt;&lt;a href=""&gt;link&lt;/a&gt;&lt;/strong&gt;&lt;span&gt; te staan&lt;/span&gt;
+  </code>
+</p>
+<p>
+  Dit is de incorrecte versie. Het probleem hier is dat het <code>&lt;strong&gt;</code> element niet correct genest is. De <code>&lt;span&gt;</code> wordt binnen het <code>&lt;strong&gt;</code> element geopend, maar het wordt buiten het <code>&lt;strong&gt;</code> element gesloten. Dit veroorzaakt een fout in de HTML structuur, omdat de volgorde van de opening en sluiting van elementen niet correct is.
+</p>
+
+<h2>Correcte HTML</h2>
+<p>
+  De correcte manier om de tekst "een link" te benadrukken met het <code>&lt;strong&gt;</code> element is als volgt:
+</p>
+<p>
+  <code>
+    &lt;span&gt;hier komt &lt;strong&gt;een&lt;/strong&gt;&lt;a href=""&gt;link&lt;/a&gt;&lt;/span&gt; te staan
+  </code>
+</p>
+<p>
+  Hier wordt de <code>&lt;strong&gt;</code> tag correct gebruikt binnen de <code>&lt;span&gt;</code> en rondom het woord "een". Dit zorgt ervoor dat de nesting correct blijft en de HTML valid is.
+</p>
+
+<h2>Terzijde: Is een spatie voor "te" nodig?</h2>
+<p>
+  Ja, de spatie is nodig voor een correcte leesbaarheid en zou beter voor link ook gezet worden (zoals ik gedaan heb). Zonder de spatie zou "linkte" aan elkaar worden geplakt.
+</p>
+
+</body>
+</html>

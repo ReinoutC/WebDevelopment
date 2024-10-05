@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opdracht 10</title>
+</head>
+<body>
+<h1>Opdracht 10 - Wat is er verkeerd in onderstaand HTML fragment?</h1>
+
+<h2>Oorspronkelijke HTML</h2>
+<p>Het volgende HTML-fragment bevat fouten:</p>
+<pre>
+&lt;ul&gt;
+    &lt;li&gt;een&lt;/li&gt;
+    &lt;li&gt;twee&lt;/li&gt;
+    &lt;ol&gt;
+        &lt;li&gt;jan&lt;/li&gt;
+        &lt;li&gt;piet&lt;/li&gt;
+        &lt;li&gt;joris&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;li&gt;vier&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<h2>Wat is er verkeerd?</h2>
+<p>
+  Het probleem is dat een geneste geordende lijst <code>&lt;ol&gt;</code> binnen een ongeordende lijst <code>&lt;ul&gt;</code> wordt gebruikt zonder de juiste structuur. Het <code>&lt;ol&gt;</code>-element mag niet rechtstreeks binnen een <code>&lt;ul&gt;</code> staan; het moet binnen een <code>&lt;li&gt;</code>-element worden geplaatst.
+</p>
+
+<h2>Correcte HTML</h2>
+<p>De correcte versie van de HTML zou er zo uit moeten zien:</p>
+<pre>
+&lt;ul&gt;
+    &lt;li&gt;een&lt;/li&gt;
+    &lt;li&gt;twee
+        &lt;ol&gt;
+            &lt;li&gt;jan&lt;/li&gt;
+            &lt;li&gt;piet&lt;/li&gt;
+            &lt;li&gt;joris&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/li&gt;
+    &lt;li&gt;vier&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<h2>Uitleg</h2>
+<p>
+  In de correcte versie is de geneste <code>&lt;ol&gt;</code>-lijst opgenomen binnen een <code>&lt;li&gt;</code>-element van de ongeordende lijst <code>&lt;ul&gt;</code>. Hierdoor blijft de structuur correct.
+</p>
+
+</body>
+</html>
