@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 3 - jQuery UI Accordion Widget</title>
+</head>
+<body>
+<h1>Opdracht 3 - jQuery UI Accordion Widget Analyse</h1>
+
+<h2>Uit welke elementen bestaat elke accordion section in de DOM-tree?</h2>
+<p>
+    Als je de demo van de accordion widget op <a href="https://jqueryui.com/accordion/">jQuery UI Accordion</a> bekijkt via de Chrome Developer Tools (Elements tabblad), zie je dat elke accordion section uit de volgende HTML-elementen bestaat:
+</p>
+<ul>
+    <li><code>&lt;h3&gt;</code>: Dit is het element dat de header van de accordion sectie bevat.</li>
+    <li><code>&lt;div&gt;</code>: Dit is het paneel dat de inhoud van de accordion sectie bevat. Het is meestal verborgen totdat de gebruiker op de header klikt.</li>
+</ul>
+
+<h2>Wat gebeurt er in de DOM-tree als je op een gesloten section klikt?</h2>
+<p>
+    Wanneer je op een gesloten accordion section klikt, gebeurt het volgende in de DOM-tree:
+</p>
+<ul>
+    <li>De <code>aria-expanded</code> en <code>aria-hidden</code> attributen van de <code>&lt;h3&gt;</code> en <code>&lt;div&gt;</code> elementen worden aangepast om aan te geven dat de sectie is geopend of gesloten.</li>
+    <li>Er wordt een <code>style</code>-attribuut toegevoegd aan de <code>&lt;div&gt;</code> dat de sectie bevat, meestal om de hoogte aan te passen zodat deze open of dicht kan schuiven.</li>
+</ul>
+
+<h2>Gebruik van de accordion zonder de complexe details te kennen</h2>
+<p>
+    Hoewel de structuur van de accordion in de DOM-tree er complex uitziet, is het niet nodig om alle details zelf te weten. jQuery UI regelt dit allemaal achter de schermen. Om de accordion in je eigen webapplicatie te gebruiken, hoef je alleen de basis HTML-elementen te gebruiken, zoals getoond in de broncode onder de 'View source' link op de jQuery UI demo-pagina.
+</p>
+
+<h2>Hoe worden de extra attributen toegevoegd aan de DOM-tree?</h2>
+<p>
+    De extra attributen die je in de DOM-tree ziet, zoals <code>aria-expanded</code> en <code>style</code>, worden door jQuery UI dynamisch toegevoegd wanneer de pagina wordt geladen of wanneer je met de accordion interacteert. Dit gebeurt via JavaScript dat de DOM manipuleert om de interactieve functionaliteit te ondersteunen.
+</p>
+
+</body>
+</html>

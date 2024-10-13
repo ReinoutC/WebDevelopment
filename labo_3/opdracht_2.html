@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 2 - DOM-tree bewerken</title>
+</head>
+<body>
+<h1>Opdracht 2 - Handmatig de DOM-tree bewerken</h1>
+
+<h2>Demonstratie van DOM-tree bewerking met Chrome Developer Tools</h2>
+<p>
+    In deze opdracht ga je handmatig de DOM-tree bewerken met behulp van de Chrome Developer Tools:
+</p>
+<ul>
+    <li>Open de 'voorbeeld headings.HTML' pagina in Chrome die we in het vorige labo hebben gemaakt.</li>
+    <li>Beweeg je muis over de elementen in de DOM-tree en kijk hoe onderdelen op de webpagina worden gehighlight.</li>
+    <li>Rechtsklik op een element in de DOM-tree en kies <strong>"Delete"</strong>. Merk op dat het element direct uit de webpagina verdwijnt.</li>
+    <li><img src="images/deleting_dom.png" alt="Voorbeeld afbeelding" width="900" height="300"><img src="images/deleting_dom2.png" alt="Voorbeeld afbeelding" width="900" height="300"></li>
+    <li>Dubbelklik op de tekst (content) tussen de begin- en eindtags van een heading-element en verander de tekst. De wijziging wordt direct zichtbaar op de webpagina.</li>
+    <li><img src="images/aanpassing_dom.png" alt="Voorbeeld afbeelding" width="900" height="300"></li>
+</ul>
+
+<p>
+    Deze wijzigingen gebeuren allemaal lokaal in de browser. Er is geen interactie met de server nodig.
+</p>
+
+<h2>Soorten HTML-documenten</h2>
+<p>
+    Vanuit het perspectief van de DOM-tree kunnen we twee soorten HTML-documenten onderscheiden:
+</p>
+<ul>
+    <li><strong>Statische HTML-documenten</strong>: De inhoud van de pagina verandert niet nadat deze is geladen in de browser. De broncode (source) die de browser ontvangt, komt altijd overeen met de DOM-tree die de browser gebruikt om de pagina weer te geven.</li>
+    <li><strong>Dynamische HTML-documenten</strong>: De inhoud van de pagina kan veranderen nadat deze is geladen door gebruik van JavaScript dat de DOM-tree bewerkt. In dit geval komt de originele page source vaak niet overeen met de dynamisch aangepaste DOM-tree.</li>
+</ul>
+
+<p>
+    Dit dynamische gedrag is een van de kenmerken van "Web 2.0", waarbij websites zich automatisch aanpassen zonder dat de hele pagina opnieuw hoeft te worden geladen.
+</p>
+
+</body>
+</html>
