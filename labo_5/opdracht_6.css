@@ -1,0 +1,34 @@
+/* Stijl voor hoofdingen */
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+/* Stijl voor paragrafen */
+p {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.2em;
+}
+
+p.red {
+    color: red;
+}
+
+p.green {
+    color: green;
+}
+
+p.blue {
+    color: blue;
+}
