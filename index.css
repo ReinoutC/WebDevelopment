@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.lab {
+    margin: 1rem 0;
+}
+
+.lab h2 {
+    font-size: 1.2rem;
+    color: #4CAF50;
+    margin-bottom: 0.5rem;
+}
+
+.lab ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lab li {
+    margin: 0.3rem 0;
+    padding: 0.3rem;
+    transition: background-color 0.2s ease;
+}
+
+.lab li:hover {
+    background-color: #f1f1f1;
+}
+
+.lab li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.lab li a:hover {
+    color: #4CAF50;
+}
