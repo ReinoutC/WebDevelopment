@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Opdracht 1 - Menubalk</title>
+  <style>
+
+    ul > li {
+      display: inline-block;
+      width: 150px;
+    }
+
+    ul > li > a {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Opdracht 1</h1>
+<p>Onderstaand HTML fragment maakt deel uit van een menubalk op een bedrijfswebsite:</p>
+
+<pre>
+&lt;ul&gt;
+    &lt;li class="menuitem"&gt;&lt;a href="..."&gt;products&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="menuitem"&gt;&lt;a href="..."&gt;distributors&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="menuitem"&gt;&lt;a href="..."&gt;contact&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<p>De items in de menubalk worden gestyled met:</p>
+
+<pre>
+.menuitem {
+    display: inline-block;
+    width: 150px;
+}
+.menuitem &gt; a {
+    color: red;
+}
+</pre>
+
+<p>
+  Herschrijf dit fragment en de CSS-regels zonder classes op elk &lt;li&gt; element te moeten gebruiken.
+</p>
+
+<h2>Oplossing</h2>
+<p>De herschreven versie van het HTML-fragment en de CSS-regels zonder gebruik van de <code>menuitem</code> class op elk <code>&lt;li&gt;</code> element:</p>
+
+<pre>
+&lt;ul&gt;
+    &lt;li&gt;&lt;a href="..."&gt;Products&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="..."&gt;Distributors&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="..."&gt;Contact&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<p>De CSS-regels worden als volgt aangepast:</p>
+
+<pre>
+ul &gt; li {
+    display: inline-block;
+    width: 150px;
+}
+ul &gt; li &gt; a {
+    color: red;
+}
+</pre>
+
+<h3>Uitleg van de CSS-selectors:</h3>
+<ul>
+  <li><strong>ul &gt; li</strong>: Selecteert alle <code>&lt;li&gt;</code> elementen die directe kinderen zijn van <code>&lt;ul&gt;</code>, wat inline-styling en breedte toepast.</li>
+  <li><strong>ul &gt; li &gt; a</strong>: Selecteert de <code>&lt;a&gt;</code> tags binnen de <code>&lt;li&gt;</code> elementen, waardoor de linktekst rood wordt.</li>
+</ul>
+
+</body>
+</html>

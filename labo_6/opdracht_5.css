@@ -1,0 +1,23 @@
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+
+a {
+    display: inline-block;
+    color: #1a0dab;
+    text-decoration: none;
+    padding-left: 25px;
+    background-image: url('images/hyperlink.png');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+a:hover {
+    color: #ff5722;
+    text-decoration: underline;
+}
