@@ -1,0 +1,213 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for centralizing content */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header section */
+header {
+    background-color: #f5f5f5; /* Light gray background for visibility of black logo */
+    padding: 1rem 0; /* Increased padding for a balanced look */
+    color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Logo styling */
+header .logo img {
+    height: 60px; /* Adjust logo size */
+}
+
+/* Navigation styling */
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+header nav ul li a {
+    color: #333; /* Dark gray text for professional look */
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #d32f2f; /* Red hover effect matching the logo */
+}
+
+/* Hero section */
+.hero {
+    background: url('images/test.jpg') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding-top: 80px; /* Adds space for fixed header */
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #d32f2f; /* Red text color for a bold impact */
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: #333; /* Dark text for readability */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background-color: #d32f2f; /* Red button color */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.cta-button:hover {
+    background-color: #b71c1c; /* Darker red on hover */
+}
+
+/* Section styling */
+section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #d32f2f; /* Red heading color for consistency */
+    margin-bottom: 2rem;
+}
+
+/* Services section */
+.services-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background-color: #f9f9f9; /* Slightly off-white background for contrast */
+    padding: 2rem;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    color: #d32f2f; /* Consistent red color for service titles */
+}
+
+.service-item p {
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+/* Projects section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.project-item p {
+    margin-top: 0.5rem;
+    color: #666;
+}
+
+/* Contact form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    font-weight: bold;
+    color: #333;
+}
+
+form input, form textarea, form button {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #d32f2f; /* Red button color */
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+form button:hover {
+    background-color: #b71c1c; /* Darker red on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+    border-top: 2px solid #d32f2f; /* Red border to tie in brand color */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .services-grid, .projects-grid {
+        flex-direction: column;
+    }
+
+    .service-item, .project-item {
+        width: 100%;
+    }
+}
