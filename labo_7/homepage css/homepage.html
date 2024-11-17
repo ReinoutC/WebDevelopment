@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reinout Commeyne - Home</title>
+    <link rel="stylesheet" href="../styles/personal_page.css">
+</head>
+<body>
+
+<header>
+    <h1>Welkom op de persoonlijke pagina van Reinout Commeyne</h1>
+    <nav>
+        <ul>
+            <li><a href="#persoonlijk">Persoonlijk</a></li>
+            <li><a href="#hobbies">Hobby's</a></li>
+            <li><a href="#likes">Favorieten</a></li>
+            <li><a href="#vrienden">Vrienden</a></li>
+            <li><a href="#prognose">Prognose</a></li>
+            <li><a href="#vragen">Antwoorden</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- Persoonlijke Informatie -->
+    <section id="persoonlijk" class="section">
+        <h2>Persoonlijke Informatie</h2>
+        <div class="content">
+            <p>
+                <strong>Naam:</strong> Reinout Commeyne<br />
+                <strong>Adres:</strong> Schoolstraat 16, Ingelmunster<br />
+                <strong>Telefoon:</strong> <a href="tel:+32470523341">+32 470 52 33 41</a><br />
+                <strong>E-mail:</strong> <a href="mailto:reinout.commeyne@student.vives.com">reinout.commeyne@student.vives.com</a>
+            </p>
+            <img src="../images/profile.jpg" alt="Profielfoto" class="profile-img">
+        </div>
+    </section>
+
+    <!-- Hobby's -->
+    <section id="hobbies" class="section">
+        <h2>Hobby's</h2>
+        <div class="content">
+            <ul>
+                <li>Gaming: Grand Strategy-spellen zoals <a href="https://store.steampowered.com/app/236850/Europa_Universalis_IV/" target="_blank">Europa Universalis IV</a>.</li>
+                <li>Goud & Zilver raffineren: Bekijk deze <a href="https://www.youtube.com/watch?v=QrYfBa9Sxs8" target="_blank">YouTube-video</a>.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Favorieten -->
+    <section id="likes" class="section">
+        <h2>Favorieten</h2>
+        <div class="content">
+            <p><strong>Reizen:</strong> Mijn laatste bestemming was Zweden.</p>
+            <img src="../images/sweden.jpg" alt="Hike in Zweden" class="img">
+            <p><strong>Eten:</strong> Mijn favoriete gerecht:</p>
+            <img src="../images/sami.jpg" alt="Favoriet gerecht" class="img">
+        </div>
+    </section>
+
+    <section id="vrienden" class="section">
+        <h2>Vrienden</h2>
+        <div class="datagrid">
+            <table>
+                <thead>
+                <tr>
+                    <th>Voornaam</th>
+                    <th>Achternaam</th>
+                    <th>Leeftijd</th>
+                    <th>Postcode</th>
+                    <th>Geboortedatum</th>
+                    <th>Telefoonnummer</th>
+                </tr>
+                </thead>
+                <tfoot>
+                <tr>
+                    <td colspan="6">
+                        <div id="paging">
+                            <ul>
+                                <li><a href="#"><span>Previous</span></a></li>
+                                <li><a href="#" class="active"><span>1</span></a></li>
+                                <li><a href="#"><span>2</span></a></li>
+                                <li><a href="#"><span>3</span></a></li>
+                                <li><a href="#"><span>4</span></a></li>
+                                <li><a href="#"><span>5</span></a></li>
+                                <li><a href="#"><span>Next</span></a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                </tfoot>
+                <tbody>
+                <tr>
+                    <td>Tom</td>
+                    <td>Peeters</td>
+                    <td>25</td>
+                    <td>8500</td>
+                    <td>15/03/1998</td>
+                    <td>+32 495 12 34 56</td>
+                </tr>
+                <tr class="alt">
+                    <td>Sofie</td>
+                    <td>Janssens</td>
+                    <td>27</td>
+                    <td>8501</td>
+                    <td class="onbekend">Onbekend</td>
+                    <td>+32 495 65 43 21</td>
+                </tr>
+                <tr>
+                    <td>Karel</td>
+                    <td>De Smet</td>
+                    <td>24</td>
+                    <td>8502</td>
+                    <td>20/07/1999</td>
+                    <td>+32 495 78 12 34</td>
+                </tr>
+                <tr class="alt">
+                    <td>Eline</td>
+                    <td>Vermeulen</td>
+                    <td>23</td>
+                    <td>8503</td>
+                    <td class="onbekend">Onbekend</td>
+                    <td>+32 495 87 65 43</td>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td>Van Damme</td>
+                    <td>26</td>
+                    <td>8504</td>
+                    <td>10/05/1997</td>
+                    <td>+32 495 98 76 54</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <!-- Prognose -->
+    <section id="prognose" class="section">
+        <h2>Prognose</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Vak</th>
+                <th>Mijn Score</th>
+                <th>Student 1</th>
+                <th>Student 2</th>
+                <th>Student 3</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Web Development</td>
+                <td>15</td>
+                <td>11</td>
+                <td>5</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>Databases</td>
+                <td>13</td>
+                <td>9</td>
+                <td class="onbekend">Onbekend</td>
+                <td>10</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Antwoorden op de vragen -->
+    <section id="vragen" class="section">
+        <h2>Antwoorden op de vragen</h2>
+        <div class="content">
+            <h3>Vraag 2</h3>
+            <p>
+                Niet alle properties die de generator voorziet zijn nodig. Sommige zijn puur visueel en kunnen worden weggelaten.
+                Bijvoorbeeld de browser-specifieke prefixes zoals <code>-webkit-</code> of <code>-moz-</code>, die vaak niet meer nodig zijn in moderne browsers.
+                Een efficiëntere aanpak is het gebruik van een enkele regel:
+                <code>background: linear-gradient(to bottom, #36752D 5%, #275420 100%);</code>
+            </p>
+
+            <h3>Vraag 3</h3>
+            <p>
+                De CSS-regel <code>.onbekend {background-color: red;}</code> werkt niet op een cel in een <code>&lt;tr&gt;</code> met de class `alt`.
+                Dit komt door specifiteit: <code>.vrienden table tbody .alt td</code> heeft een score van 23 punten (10 voor elke class + 3 voor elementen),
+                terwijl <code>.onbekend</code> slechts 10 punten heeft. Een oplossing is:
+                <code>.vrienden table tbody .alt td.onbekend {background-color: red;}</code>
+            </p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Reinout Commeyne - Alle rechten voorbehouden</p>
+</footer>
+
+</body>
+</html>

@@ -1,36 +1,60 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f3f4f6;
-    color: #333;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-h1 {
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
     text-align: center;
-    padding: 1rem;
-    background-color: #4CAF50;
+    background-color: #36752D;
     color: white;
-    margin: 0;
+    padding: 2rem 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 4px solid #275420;
 }
 
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Container Styling */
 .container {
-    max-width: 800px;
-    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
     padding: 1rem;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
 }
 
+/* Lab Section Styling */
 .lab {
-    margin: 1rem 0;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
 }
 
 .lab h2 {
-    font-size: 1.2rem;
-    color: #4CAF50;
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: #36752D;
+    margin-bottom: 1rem;
 }
 
 .lab ul {
@@ -38,22 +62,26 @@ h1 {
     padding: 0;
 }
 
-.lab li {
-    margin: 0.3rem 0;
-    padding: 0.3rem;
-    transition: background-color 0.2s ease;
+.lab ul li {
+    margin: 0.5rem 0;
 }
 
-.lab li:hover {
-    background-color: #f1f1f1;
-}
-
-.lab li a {
+.lab ul li a {
     text-decoration: none;
-    color: #333;
+    color: #275420;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
-.lab li a:hover {
-    color: #4CAF50;
+.lab ul li a:hover {
+    color: #a8e063;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #444;
+    color: white;
+    padding: 1rem 0;
+    margin-top: 2rem;
 }

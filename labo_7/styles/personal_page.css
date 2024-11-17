@@ -1,0 +1,178 @@
+/* Algemene reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Algemeen */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #36752D, #275420);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 0.5rem 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #a8e063;
+    text-decoration: underline;
+}
+
+/* Secties */
+.section {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    border-bottom: 2px solid #36752D;
+    padding-bottom: 0.5rem;
+    color: #275420;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.section .content {
+    margin-top: 1rem;
+    line-height: 1.8;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+    text-align: left;
+}
+
+table th {
+    background-color: #36752D;
+    color: white;
+    font-weight: bold;
+}
+
+table tr.alt {
+    background-color: #f4f4f4;
+}
+
+table td.onbekend {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+.datagrid {
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+
+.datagrid table thead th {
+    background: linear-gradient(to bottom, #36752D 5%, #275420 100%);
+    color: white;
+    font-size: 15px;
+    text-align: left;
+}
+
+.datagrid table tfoot td {
+    border-top: 1px solid #36752D;
+    background-color: #DFFFDE;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.datagrid table tfoot ul {
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.datagrid table tfoot ul li {
+    margin: 0 0.5rem;
+}
+
+.datagrid table tfoot ul li a {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to bottom, #36752D, #275420);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.datagrid table tfoot ul li a.active,
+.datagrid table tfoot ul li a:hover {
+    background-color: #275420;
+    font-weight: bold;
+}
+
+/* Afbeeldingen */
+.profile-img {
+    margin-top: 1rem;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.img {
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #444;
+    color: white;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
