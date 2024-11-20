@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    padding: 10px;
+}
+
+
+.sidebar{
+    box-sizing: border-box;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    
+
+}

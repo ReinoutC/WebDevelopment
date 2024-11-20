@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Opdracht 3</title>
+</head>
+<body>
+
+<h1>Opdracht 3</h1>
+
+<p><strong>Waarom staat de tekst in de blokken horizontaal gecentreerd?</strong></p>
+<ul>
+  <li>De tekst in de blokken wordt horizontaal gecentreerd door de toepassing van <code>text-align: center;</code> in de CSS voor de elementen. Deze property zorgt ervoor dat de tekst in het midden van het element wordt geplaatst, ongeacht de breedte van het element.</li>
+</ul>
+
+<p><strong>Ga na dat een property <code>vertical-align: center;</code> geen effect heeft. Waarom eigenlijk niet?</strong></p>
+<ul>
+  <li>De property <code>vertical-align: center;</code> bestaat niet in CSS. De <code>vertical-align</code> property kan alleen bepaalde waarden aannemen zoals <code>top</code>, <code>middle</code>, <code>bottom</code>, enz., maar er is geen <code>center</code> waarde.</li>
+</ul>
+
+<p><strong>Ga na dat <code>vertical-align: middle;</code> er niet voor zorgt dat de tekst verticaal gecentreerd wordt. Wat doet <code>vertical-align</code> dan wel?</strong></p>
+<ul>
+  <li>De <code>vertical-align</code> property wordt gebruikt voor inline-elementen of elementen die inline-block zijn en werkt in de context van hun omgeving. Het zorgt ervoor dat een element uitgelijnd wordt ten opzichte van het omliggende element. In dit geval heeft <code>vertical-align: middle;</code> geen effect op de tekst omdat het geen invloed heeft op de plaatsing van de inhoud binnen een block-level element.</li>
+</ul>
+
+<p><strong>Wat is de ‘simpele’ manier om een enkele regel tekst verticaal te centreren? (Tip: <code>line-height</code>)</strong></p>
+<ul>
+  <li>De eenvoudige manier om een enkele regel tekst verticaal te centreren in een element is door de <code>line-height</code> gelijk te maken aan de hoogte van het element. Hierdoor zal de enkele regel tekst netjes in het midden staan.</li>
+</ul>
+
+<p><strong>Welke truc wordt vaak gebruikt om meerdere regels verticaal te centreren? (Tip: table cell)</strong></p>
+<ul>
+  <li>Een veelgebruikte truc om meerdere regels tekst verticaal te centreren, is door het element te stylen alsof het een tabelcel is, bijvoorbeeld met <code>display: table-cell;</code> en <code>vertical-align: middle;</code>. Dit zorgt ervoor dat de tekst netjes verticaal wordt uitgelijnd.</li>
+</ul>
+
+<p><strong>In 'styles.css' staan twee verschillende CSS regels die de height instellen van een element met class="area tall". Waarom krijgt de regel voor class 'tall' voorrang?</strong></p>
+<ul>
+  <li>De regel die specifiek gericht is op de class <code>tall</code> krijgt voorrang omdat deze specifieker is dan een algemene selector. In CSS krijgt een meer specifieke selector (zoals een class-selectie) voorrang boven een algemene regel. Bovendien kan de plaats van de regel in de CSS-file en het gebruik van <code>!important</code> invloed hebben op welke regel voorrang krijgt.</li>
+</ul>
+
+<p><strong>Verander de CSS-file om je vermoeden te bevestigen. Zet nadien alles weer terug op z’n oorspronkelijke plaats.</strong></p>
+<ul>
+  <li>Door de CSS-regels in de stylesheet aan te passen, bijvoorbeeld door de volgorde van de regels te veranderen, kun je testen welke regel prioriteit krijgt. De regel die later in de stylesheet staat (met dezelfde specificiteit), zal voorrang krijgen. Na deze wijziging kun je bevestigen dat de volgorde van de regels invloed heeft op welke CSS-regel toegepast wordt.</li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Opdracht 5</title>
+</head>
+<body>
+
+<h1>Opdracht 5</h1>
+
+<p><strong>Resize het browservenster (horizontaal). Ga na dat er naast element 09, 2 'regels' van blokken geplaatst worden als het venster breed genoeg is.</strong></p>
+<ul>
+  <li>Wanneer je het browservenster vergroot, worden naast element 09 nog twee regels van blokken geplaatst, mits er genoeg ruimte beschikbaar is. Dit komt doordat de elementen met de <code>floaty</code> class zweven en zichzelf positioneren op basis van de beschikbare breedte van het venster.</li>
+</ul>
+
+<p><strong>Geef element 13 de 'break' class. Resize je browser opnieuw. Ga na dat element 13 altijd op een nieuwe 'regel' begint en wel lager dan element 09.</strong></p>
+<ul>
+  <li>Dit zorgt ervoor dat element 13 altijd op een nieuwe regel begint. Dit wordt bereikt door <code>clear: both;</code> toe te passen, waardoor het element niet naast andere zwevende elementen komt te staan maar onder alle voorgaande floats wordt gepositioneerd. Element 13 staat dus altijd lager dan element 09.</li>
+</ul>
+
+<h2>Toepassingen voor Floating Elements</h2>
+<ol>
+  <li>Een inline stuk laten zweven zodat de andere inline delen (bijvoorbeeld tekst) eromheen gezet worden. Hier heeft <code>clear</code> geen nut, omdat de zwevende elementen samen met de tekst vloeien.</li>
+  <li>Een blok laten zweven, met daarnaast wellicht één of meerdere andere zwevende blokken. Hier kan <code>clear</code> nuttig zijn voor de blokken die erna komen, om ervoor te zorgen dat de volgende elementen netjes onder de zwevende elementen beginnen en niet ernaast.</li>
+</ol>
+
+</body>
+</html>

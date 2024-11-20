@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Opdracht 4</title>
+</head>
+<body>
+
+<h1>Opdracht 4</h1>
+
+<p><strong>Geef elementen 09, 12 en 14 de 'floaty' class.</strong></p>
+
+<p><strong>Ga na dat de floaty elementen naar links verplaatst werden 'in hun regel'.</strong></p>
+<ul>
+  <li>De elementen met de <code>floaty</code> class worden naar links verplaatst door de <code>float: left;</code> eigenschap. Dit betekent dat ze binnen hun huidige regel zoveel mogelijk naar de linkerkant worden verplaatst, waardoor de rest van de elementen daar omheen vloeien.</li>
+</ul>
+
+<p><strong>Ga na dat er geen grote ruimte achterblijft tussen elementen 08 en 10 waar element 09 stond.</strong></p>
+<ul>
+  <li>Wanneer het element met de class <code>floaty</code> (element 09) wordt verplaatst, wordt de ruimte die het element oorspronkelijk inneemt, opgevuld door andere elementen. Hierdoor blijft er geen grote lege ruimte achter tussen elementen 08 en 10.</li>
+</ul>
+
+<p><strong>Ga na dat 12 en 14 niet altijd netjes naast elkaar staan, het hangt er maar vanaf of ze in dezelfde regel staan.</strong></p>
+<ul>
+  <li>Omdat hun plaatsing afhankelijk is van de beschikbare ruimte in de huidige regel. Als er niet genoeg ruimte is, wordt een van de elementen naar een nieuwe regel verplaatst.</li>
+</ul>
+
+<p><strong>Ga na dat er geen kleine ruimte is tussen de groene floaty elementen en het rode element rechts ernaast, maar wel tussen de rode elementen onderling.</strong></p>
+<ul>
+  <li>Er is geen ruimte tussen de groene <code>floaty</code> elementen en het rode element ernaast doordat de elementen zweven en direct naast elkaar worden geplaatst. Tussen de rode elementen onderling is wel ruimte omdat ze niet zweven en daardoor de standaard marges behouden.</li>
+</ul>
+
+<p><strong>Geef element 17 de 'break' class.</strong></p>
+<p><strong>Ga na dat dit helemaal geen invloed heeft qua positionering, er wordt niks 'gecleared'.</strong></p>
+<ul>
+  <li>Het toevoegen van de <code>break</code> class heeft geen invloed op de positionering omdat het niet automatisch voor een 'clear' zorgt. Het clearen van floating elementen werkt alleen goed bij <code>display: block</code> elementen en niet bij inline(-block) elementen, omdat het doel is om floating elementen netjes naar een nieuwe regel te verplaatsen.</li>
+</ul>
+
+</body>
+</html>

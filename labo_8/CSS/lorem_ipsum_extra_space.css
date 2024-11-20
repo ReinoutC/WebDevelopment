@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box; /* Zorgt ervoor dat padding en border worden opgenomen in de totale breedte */
+}
+
+body {
+    display: flex;
+    gap: 10px; /* Ruimte tussen kolommen */
+    padding: 10px;
+}
+
+.column {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid black;
+}
