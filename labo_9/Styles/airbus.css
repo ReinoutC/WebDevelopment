@@ -1,117 +1,145 @@
-/* General Styles */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+
 }
 
-.content {
-    display: flex;
-    max-width: 95%;
+.page-width {
+    display: grid;
+    grid-template-columns: 70% 25%;
+    width: 95%;
     margin: 0 auto;
 }
 
-/* Top Area */
-.top {
-    background: url('labo_9/Images/bgsky3.jpg') no-repeat center;
-    height: 200px;
-    text-align: center;
+h1,
+h2 {
     color: darkblue;
-    position: relative;
+    text-align: center;
 }
 
-.top h1 {
-    font-size: 300%;
+h1 {
+    font-size: 3em;
     font-weight: bold;
     font-style: italic;
-    margin: 0;
+    margin-top: 0;
 }
 
-.top h2 {
-    font-size: 240%;
+h2 {
+    font-size: 2.4em;
     font-weight: bold;
-    margin: 0;
+    margin-bottom: 0;
 }
 
-.airplane-img {
-    position: absolute;
-    right: 250px;
+h3 {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+header {
+    background-image: url(../images/bgsky3.jpg);
+    background-size: cover;
+    grid-column: span 2;
+    height: 200px;
+}
+
+header>img {
+    float: right;
+    position: relative;
     bottom: 60px;
+    right: 250px;
+    z-index: 1;
 }
 
-/* News Section */
-.news {
-    width: 25%;
-    background-color: #dddddd;
+figure {
+    float: left;
+    padding-top: 20px;
+    margin: 0 20px;
+}
+
+p>span {
+    color: darkblue;
+    font-weight: bold;
+    font-style: italic;
+}
+
+aside {
     border: 1px solid #999999;
-    padding: 10px;
+    background-color: #dddddd;
+    grid-column: 2;
+    box-sizing: border-box;
+}
+
+aside p {
     color: #666666;
     font-size: 90%;
-}
-
-.news-block h3 {
-    color: white;
-    background-color: blue;
-    text-align: center;
-    font-size: 120%;
-}
-
-/* Main Section */
-.main {
-    width: 75%;
-    margin-left: 10px;
-}
-
-.introduction {
-    background: white;
-    color: black;
-    padding: 20px;
-}
-
-.introduction .highlight {
-    color: blue;
-    font-weight: bold;
-    font-style: italic;
-}
-
-.logo {
-    float: left;
-    margin-right: 20px;
-}
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px 0;
-}
-
-.foto {
-    background-color: #999999;
     padding: 10px;
-    border: 1px dashed white;
-    width: 180px;
-    height: 180px;
 }
 
-/* Footer Section */
+.content {
+    grid-column: 1;
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+
+footer,
 .bottom {
+    grid-column: span 2;
+}
+
+.bottom {
+    width: 100%;
     background-color: #666666;
     color: white;
     line-height: 2em;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
+}
+
+.bottom>div {
+    width: 200px;
+    margin-left: 120px;
+    display: inline-block;
+}
+
+.bottom a {
+    color: inherit;
 }
 
 .bottom a:hover {
     color: red;
 }
 
-/* Copyright */
-.copyright {
+footer>p {
     text-align: center;
     background-color: white;
     color: black;
-    padding: 10px;
+}
+
+.gallery {
+    background-color: #999999;
+    line-height: 0;
+}
+
+.foto {
+    display: inline-block;
+    border: 1px dotted white;
+    margin: 20px;
+}
+
+.foto>img {
+    height: 180px;
+    width: 180px;
+    border: 10px solid white;
+    box-sizing: border-box;
+}
+
+.introduction>p {
+    overflow: hidden;
+    text-align: justify;
+    padding: 20px 30px 20px 20px;
+}
+
+.introduction {
+    padding: 20px;
+    background-color: white;
+    color: black;
 }
