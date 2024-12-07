@@ -1,0 +1,53 @@
+/* Ensure borders are included in width/height calculations */
+* {
+    box-sizing: border-box;
+}
+
+#a {
+    border: solid black;
+    border-width: 0 7.5px 15px 0;
+    min-height: 165px; /* Adjust if needed for alignment */
+    background: rgb(255, 255, 255);
+}
+
+#b {
+    border: solid black;
+    border-width: 15px 7.5px 7.5px 0;
+    min-height: 190px; /* Matches with #a for consistent height */
+    background: rgb(255, 255, 255);
+}
+
+#c {
+    border: solid black;
+    border-width: 0 0 7.5px 7.5px;
+    min-height: 355px; /* Ensure this aligns properly with Bootstrap's col-8 */
+    background: rgb(220, 40, 26);
+}
+
+#d {
+    border: solid black;
+    border-width: 7.5px 7.5px 0 0;
+    min-height: 150px; /* Adjusted for consistency */
+    background: rgb(0, 93, 159);
+}
+
+#e {
+    border: solid black;
+    border-width: 7.5px 7.5px 0 7.5px;
+    min-height: 150px; /* Consistent height with #d */
+    background: rgb(255, 255, 255);
+}
+
+#f {
+    border: solid black;
+    border-width: 7.5px 0 12.5px 7.5px;
+    min-height: 75px; /* Ensure proper alignment */
+    background: rgb(255, 255, 255);
+}
+
+#g {
+    border: solid black;
+    border-width: 12.5px 0 0 7.5px;
+    min-height: 75px; /* Matches #f for consistency */
+    background-color: rgb(242, 224, 122);
+}
