@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+}
+#consoleOutput {
+    background-color: #222;
+    color: #0f0;
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    border: 1px solid #444;
+}
