@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Demonstratie slider</title>
+	<script type="text/javascript" charset="utf-8" src="scripts/code.js" defer></script>
+	<link rel="stylesheet" href="styles/styles.css"/>
+</head>
+<body>
+<section>
+	<div class="slider-container">
+		<div class="sliders">
+			<div class="slider-group">
+				<input type="range" class="slider" value="155" min="0" max="255">
+				<span class="value-label">Red 155</span>
+			</div>
+			<div class="slider-group">
+				<input type="range" class="slider" value="206" min="0" max="255">
+				<span class="value-label">Green 206</span>
+			</div>
+			<div class="slider-group">
+				<input type="range" class="slider" value="53" min="0" max="255">
+				<span class="value-label">Blue 53</span>
+			</div>
+		</div>
+		<div class="colorDemo"></div> <!-- Color box moved inside slider-container -->
+	</div>
+</section>
+</body>
+</html>

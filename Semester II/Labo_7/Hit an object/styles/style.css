@@ -1,0 +1,18 @@
+#playField{
+    position:relative;
+    border:solid 1px black;
+    box-sizing:border-box; /* anders krijgen we scrollbars omdat het element door de border net te groot wordt */
+    width: 600px;
+    height:800px;
+}
+
+
+.target {
+    position: absolute;
+}
+
+.unClickable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}

@@ -1,0 +1,43 @@
+body {
+	font-family: Arial, sans-serif;
+}
+
+.slider-container {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding: 15px;
+	border: 2px solid gray;
+	border-radius: 10px;
+	width: fit-content;
+	background-color: #f8f8f8;
+}
+
+.sliders {
+	flex-direction: column;
+	gap: 10px;
+}
+
+.slider-group {
+	align-items: center;
+	gap: 10px;
+}
+
+.slider {
+	width: 150px;
+}
+
+.value-label {
+	font-size: 16px;
+	font-weight: bold;
+	width: 180px;
+	align-self: end;
+}
+
+/* Ensures the color box is aligned inside the flex container */
+.colorDemo {
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+	flex-shrink: 0; /* Prevents the box from shrinking */
+}
