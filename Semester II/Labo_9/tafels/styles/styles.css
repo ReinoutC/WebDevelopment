@@ -1,0 +1,50 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#inputSection {
+    margin-bottom: 20px;
+}
+
+#numberLabel {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    width: 100px;
+}
+
+button {
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+.table {
+    display: inline-block;
+    width: 250px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.tableHeader {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tableRow {
+    padding: 8px;
+    text-align: center;
+}
+
+.tableRow:nth-child(even) {
+    background-color: #f2f2f2;
+}
